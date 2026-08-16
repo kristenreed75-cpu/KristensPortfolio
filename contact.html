@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+
+    <style>
+        body {
+            background-color: #F7B7C3;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+	html, body {
+   	 overflow-x: hidden;
+	}
+
+        /* HOME ICON */
+        .home-icon {
+            width: 28px;
+            height: 28px;
+            border-left: 4px solid #8B1E3F;
+            border-bottom: 4px solid #8B1E3F;
+            transform: rotate(45deg);
+            position: absolute;
+            top: 25px;
+            left: 40px;
+            display: inline-block;
+        }
+
+        .home-icon:hover {
+            border-color: #8B1E3F;
+            transition: 0.2s;
+        }
+
+        /* PAGE WRAPPER */
+        .contact-wrapper {
+            max-width: 700px;
+            margin: 0 auto;
+            padding-top: 25px;
+            text-align: center;
+        }
+
+        /* TITLE */
+        .contact-title {
+            font-size: 5rem;
+            color: #8B1E3F;
+            font-weight: 900;
+            letter-spacing: 4px;
+            margin-top: 10px;
+	    margin-bottom: 10px;
+        }
+
+        /* CONTACT INFO */
+        .contact-info {
+            font-size: 1.2rem;
+            color: #5f142c;
+            margin-bottom: 25px;
+            line-height: 1.6;
+        }
+
+        /* FORM CARD */
+        .contact-form {
+            background: white;
+            border: 3px solid #8B1E3F;
+            border-radius: 12px;
+            padding: 25px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        /* TWO SIDE-BY-SIDE INPUTS */
+        .row-2 {
+            display: flex;
+            gap: 20px;
+        }
+
+        .row-2 input {
+            flex: 1;
+        }
+
+        /* INPUTS + TEXTAREA */
+        .contact-form input,
+        .contact-form textarea {
+            border: 2px solid #8B1E3F;
+            border-radius: 10px;
+            padding: 12px;
+            font-size: 1rem;
+            outline: none;
+        }
+
+        .contact-form textarea {
+            height: 250px;
+            resize: none;
+        }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            border-color: #5f142c;
+        }
+
+        /* SUBMIT BUTTON */
+        .submit-btn {
+            width: 200px;
+            margin: 0 auto;
+            padding: 12px 20px;
+            background: #8B1E3F;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.2rem;
+            cursor: pointer;
+        }
+
+        .submit-btn:hover {
+            background: #5f142c;
+        }
+
+        /* BOTTOM ARROWS */
+        .bottom-arrows {
+            width: 100vw;
+            position: fixed;
+            bottom: 30px;
+            left: 0;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 40px;
+            z-index: 9999;
+	    box-sizing: border-box;
+        }
+
+
+        .bottomL-arrow,
+        .bottomR-arrow {
+            width: 25px;
+            height: 25px;
+            display: inline-block;
+            border-bottom: 4px solid #8B1E3F;
+        }
+
+        .bottomL-arrow {
+            border-left: 4px solid #8B1E3F;
+            transform: rotate(45deg);
+        }
+
+        .bottomR-arrow {
+            border-right: 4px solid #8B1E3F;
+            transform: rotate(-45deg);
+        }
+
+        .bottomL-arrow:hover,
+        .bottomR-arrow:hover {
+            border-color: #8B1E3F;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HOME ICON -->
+    <a href="buttons.html" class="home-icon"></a>
+
+    <div class="contact-wrapper">
+
+        <!-- TITLE -->
+        <div class="contact-title">CONTACT ME</div>
+
+        <!-- PHONE + EMAIL -->
+        <div class="contact-info">
+            (412) 452‑4614 <br>
+            Kristenreed75@gmail.com
+        </div>
+
+        <!-- FORM -->
+        <form class="contact-form" action="https://formspree.io/f/mlgkywqq" method="POST">
+
+            <!-- NAME + EMAIL SIDE BY SIDE -->
+            <div class="row-2">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+            </div>
+
+            <!-- SUBJECT -->
+            <input type="text" name="subject" placeholder="Email Subject" required>
+
+            <!-- MESSAGE -->
+            <textarea name="message" placeholder="Your Message" required></textarea>
+
+            <!-- SUBMIT BUTTON -->
+            <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+
+    </div>
+
+    <!-- BOTTOM ARROWS -->
+    <div class="bottom-arrows">
+        <a href="resume.html" class="bottomL-arrow"></a>
+        <a href="buttons.html" class="bottomR-arrow"></a>
+    </div>
+
+</body>
+</html>
+
+

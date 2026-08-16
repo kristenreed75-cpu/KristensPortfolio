@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta-name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+
+    <style>
+        body {
+            background-color: #F7B7C3;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        html, body {
+            overflow-x: hidden;
+        }
+
+        /* HOME ICON */
+        .home-icon {
+            width: 28px;
+            height: 28px;
+            border-left: 4px solid #8B1E3F;
+            border-bottom: 4px solid #8B1E3F;
+            transform: rotate(45deg);
+            position: absolute;
+            top: 25px;
+            left: 40px;
+            display: inline-block;
+        }
+
+        .home-icon:hover {
+            border-color: #5f142c;
+            transition: 0.2s;
+        }
+
+        /* PAGE WRAPPER */
+        .projects-wrapper {
+            max-width: 900px;
+            margin: 0 auto;
+            padding-top: 60px;
+            text-align: center;
+        }
+
+        /* TITLE */
+        .projects-title {
+            font-size: 4rem;
+            color: #8B1E3F;
+            font-weight: 900;
+            letter-spacing: 4px;
+            margin-bottom: 40px;
+        }
+
+        /* GRID */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+        }
+
+        /* PROJECT CARD */
+        /* ✨ Smooth girly-tech fade-in */
+.project-card {
+    background: white;
+    border: 3px solid #8B1E3F;
+    border-radius: 12px;
+    padding: 25px;
+    text-align: center;
+    transition: 0.2s;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+
+    /* new smoother animation */
+    opacity: 0;
+    transform: translateY(10px);
+    animation: fadeSoft 0.55s cubic-bezier(.25,.46,.45,.94) forwards;
+}
+
+/* ✨ faster stagger */
+.project-card:nth-child(1) { animation-delay: 0.05s; }
+.project-card:nth-child(2) { animation-delay: 0.15s; }
+.project-card:nth-child(3) { animation-delay: 0.25s; }
+.project-card:nth-child(4) { animation-delay: 0.35s; }
+
+@keyframes fadeSoft {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+
+        .project-card:hover {
+            border-color: #5f142c;
+            transform: translateY(-5px);
+            cursor: pointer;
+        }
+
+        .project-title {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #8B1E3F;
+            margin-bottom: 10px;
+        }
+
+        .divider {
+            width: 60%;
+            height: 3px;
+            background-color: #8B1E3F;
+            margin: 0 auto 15px auto;
+            border-radius: 2px;
+        }
+
+        .project-desc {
+            font-size: 1rem;
+            color: #5f142c;
+            line-height: 1.4;
+        }
+
+        /* BOTTOM ARROWS */
+        .bottom-arrows {
+            width: 100vw;
+            position: fixed;
+            bottom: 30px;
+            left: 0;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 40px;
+            z-index: 9999;
+            box-sizing: border-box;
+        }
+
+        .bottomL-arrow,
+        .bottomR-arrow {
+            width: 25px;
+            height: 25px;
+            display: inline-block;
+            border-bottom: 4px solid #8B1E3F;
+        }
+
+        .bottomL-arrow {
+            border-left: 4px solid #8B1E3F;
+            transform: rotate(45deg);
+        }
+
+        .bottomR-arrow {
+            border-right: 4px solid #8B1E3F;
+            transform: rotate(-45deg);
+        }
+
+        .bottomL-arrow:hover,
+        .bottomR-arrow:hover {
+            border-color: #5f142c;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HOME ICON -->
+    <a href="buttons.html" class="home-icon"></a>
+
+    <div class="projects-wrapper">
+
+        <!-- TITLE -->
+        <div class="projects-title">PROJECTS</div>
+
+        <!-- GRID -->
+        <div class="projects-grid">
+
+            <!-- PROJECT 1 -->
+            <a href="p1.html" class="project-card">
+                <div class="project-title">Arch Studios</div>
+                <div class="divider"></div>
+                <div class="project-desc">
+                    A prototype architecture app designed to support architects’ everyday workflow.
+                </div>
+            </a>
+
+            <!-- PROJECT 2 -->
+            <a href="p2.html" class="project-card">
+                <div class="project-title">Zooniverse</div>
+                <div class="divider"></div>
+                <div class="project-desc">
+                    Mobile redesign improving Zooniverse’s accessibility and student engagement.
+                </div>
+            </a>
+
+            <!-- PROJECT 3 -->
+            <a href="p3.html" class="project-card">
+                <div class="project-title">Custom Card Creator</div>
+                <div class="divider"></div>
+                <div class="project-desc">
+                    A multi‑template card generator built with HTML, CSS, and JavaScript.
+                </div>
+            </a>
+
+            <!-- PROJECT 4 -->
+            <a href="p4.html" class="project-card">
+                <div class="project-title">Adventure Calc</div>
+                <div class="divider"></div>
+                <div class="project-desc">
+                    A multi‑form C# app for scuba and skydiving pricing.
+                </div>
+            </a>
+
+        </div>
+    </div>
+
+    <!-- BOTTOM ARROWS -->
+    <div class="bottom-arrows">
+        <a href="cover.html" class="bottomL-arrow"></a>
+        <a href="resume.html" class="bottomR-arrow"></a>
+    </div>
+
+</body>
+</html>

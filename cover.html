@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kristen Reed — Portfolio</title>
+
+    <style>
+        body {
+            margin: 0;
+            background: #F7B7C3; /* warm pink */
+            font-family: Arial, Helvetica, sans-serif;
+            color: #8B1E3F; /* dark red */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+            animation: fadeIn 1.2s ease;
+            text-align: center;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        /* clickable name wrapper */
+        .name-link {
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        /* the actual name */
+        .name-link h1 {
+            font-size: 64px;
+            margin: 0;
+            letter-spacing: 2px;
+            padding: 20px 30px; /* expands clickable area invisibly */
+            color: #8B1E3F;
+            transition: 0.3s ease;
+        }
+
+        /* hover effect — clean, no box */
+        .name-link:hover h1 {
+            color: #5f142c;
+            letter-spacing: 3px;
+        }
+
+        h2 {
+            margin: 10px 0 10px;
+            font-size: 22px;
+            letter-spacing: 4px;
+        }
+
+        .tagline {
+            font-size: 18px;
+            margin-top: 5px;
+            letter-spacing: 1px;
+            opacity: 0.9;
+        }
+
+        /* wave moved to bottom */
+        .wave {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            opacity: 0.25;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- clickable name -->
+    <a href="buttons.html" class="name-link">
+        <h1>KRISTEN REED</h1>
+    </a>
+
+    <h2>PORTFOLIO</h2>
+
+    <p class="tagline"> Designing vibes and interfaces. </p>
+
+    <!-- wave at bottom -->
+    <svg class="wave" viewBox="0 0 1440 320">
+        <path fill="#8B1E3F" fill-opacity="1" 
+        d="M0,224L48,208C96,192,192,160,288,165.3C384,171,480,213,576,229.3C672,245,768,235,864,218.7C960,203,1056,181,1152,170.7C1248,160,1344,160,1392,160L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+        </path>
+    </svg>
+
+</body>
+</html>

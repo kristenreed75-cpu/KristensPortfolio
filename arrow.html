@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bottom Corner Arrows</title>
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+    }
+
+/* Bottom arrow container */
+.bottom-arrows {
+    width: 100%;
+    position: fixed;
+    bottom: 30px;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+    z-index: 9999;
+}
+
+/* Make sure links behave like arrow blocks */
+.bottom-arrows a {
+    display: inline-block;
+    text-decoration: none;
+    background: transparent;
+    box-sizing: border-box;
+}
+
+/* LEFT ARROW */
+.bottomL-arrow {
+    width: 25px;
+    height: 25px;
+    border-left: 4px solid #8B1E3F;
+    border-bottom: 4px solid #8B1E3F;
+    transform: rotate(45deg);
+}
+
+/* RIGHT ARROW */
+.bottomR-arrow {
+    width: 25px;
+    height: 25px;
+    border-right: 4px solid #8B1E3F;
+    border-bottom: 4px solid #8B1E3F;
+    transform: rotate(-45deg);
+}
+
+</style>
+</head>
+<body>
+
+  <!-- Left arrow -->
+  <div class="arrow arrow-left">&#8592;</div>
+
+  <!-- Right arrow -->
+  <div class="arrow arrow-right">&#8594;</div>
+
+</body>
+</html>

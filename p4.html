@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta-name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Template</title>
+
+    <style>
+        body {
+            background-color: #F7B7C3;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #8B1E3F;
+        }
+	html, body {
+   	 overflow-x: hidden;
+	}
+
+	/* Back Arrow */
+        .back-arrow {
+            display: inline-block;
+            width: 22px;
+            height: 22px;
+            border-left: 4px solid #8B1E3F;
+            border-bottom: 4px solid #8B1E3F;
+            transform: rotate(45deg);
+            margin-left: 40px;
+            margin-top: 20px;
+            text-decoration: none;
+        }
+
+        .back-arrow:hover {
+            border-color: #5f142c;
+            transition: 0.2s;
+        }
+
+        .page-title {
+            text-align: center;
+            font-size: 4rem;
+            font-weight: 900;
+            letter-spacing: 4px;
+            margin-top: 40px;
+            margin-bottom: 60px;
+        }
+
+        .section {
+            width: 85%;
+            margin: 0 auto;
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 80px;
+        }
+
+        /* PHOTOS */
+        .photo1 {
+            width: 500px;
+            height: auto;
+            border: 3px solid #8B1E3F;
+            border-radius: 12px;
+            margin-top: 0px;
+        }
+
+        .photo2 {
+            width: 450px;
+            height: auto;
+            border: 3px solid #8B1E3F;
+            border-radius: 12px;
+            margin-top: 10px;
+	    margin-left: 150px;
+	    align-self: flex-start;
+
+        }
+
+        .photo3 {
+            width: 400px;
+            height: auto;
+            border: 3px solid #8B1E3F;
+            border-radius: 12px;
+            margin-top: 0px;
+        }
+
+        /* PARAGRAPH BOXES */
+        .p1-box {
+            background: white;
+            border: 3px solid #8B1E3F;
+            border-radius: 12px;
+            padding: 20px;
+            width: 350px;
+            margin-left: 100px;
+            margin-top: 120px;
+        }
+
+        .p2-box {
+            background: white;
+            border: 3px solid #8B1E3F;
+            border-radius: 12px;
+            padding: 20px;
+            width: 350px;
+            margin-left: 0px;
+            margin-top: 60px;
+        }
+
+        .p3-box {
+            background: white;
+            border: 3px solid #8B1E3F;
+            border-radius: 12px;
+            padding: 20px;
+            width: 350px;
+            margin-left: 150px;
+            margin-top: 160px;
+        }
+
+        /* GALLERY */
+        .gallery {
+            width: 90%;
+            margin: 0 auto;
+            margin-top: 120px;
+            text-align: center;
+        }
+
+        .gallery-row {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-bottom: 20px;
+        }
+
+        .gphoto1 {
+            width: 250px;
+            height: 200;
+            border: 3px solid #8B1E3F;
+            border-radius: 12px;
+            margin-top: 0px;
+        }
+
+        .gphoto2 {
+            width: 250px;
+            height: 200px;
+            border: 3px solid #8B1E3F;
+            border-radius: 12px;
+            margin-top: 0px;
+        }
+
+        .gphoto3 {
+            width: 250px;
+            height: auto;
+            object-fit: cover;
+            border: 3px solid #8B1E3F;
+            border-radius: 12px;
+            margin-top: 0px;
+        }
+
+        .feature-box {
+            background: white;
+            border: 3px solid #8B1E3F;
+            border-radius: 12px;
+            padding: 20px;
+            width: 90%;
+            margin: 40px auto 0 auto;
+        }
+
+        /* BOTTOM ARROWS */
+        .bottom-arrows {
+            width: 100vw;
+            position: fixed;
+            bottom: 30px;
+            left: 0;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 40px;
+            z-index: 9999;
+	    box-sizing: border-box;
+        }
+
+
+        .bottomL-arrow,
+        .bottomR-arrow {
+            width: 25px;
+            height: 25px;
+            display: inline-block;
+            border-bottom: 4px solid #8B1E3F;
+        }
+
+        .bottomL-arrow {
+            border-left: 4px solid #8B1E3F;
+            transform: rotate(45deg);
+        }
+
+        .bottomR-arrow {
+            border-right: 4px solid #8B1E3F;
+            transform: rotate(-45deg);
+        }
+
+        .bottomL-arrow:hover,
+        .bottomR-arrow:hover {
+            border-color: #5f142c;
+
+        }
+    </style>
+</head>
+
+<body>
+    <a href="projects.html" class="back-arrow"></a>
+
+    <div class="page-title">Adventure Calc </div>
+
+    <!-- STEP 1 -->
+    <div class="section">
+        <img src="AC1.png" alt="Photo 1" class="photo1">
+        <div class="p1-box">
+            <p>This project focused on designing and coding a multi‑form Windows application with a clean, consistent interface. The main form served as the navigation hub, allowing users to move between scuba, skydiving, and help pages. Each activity form included its own calculation logic, input fields, and buttons, while maintaining a unified visual style across the entire application. The goal was to create a simple, user‑friendly program that handled cost calculations and navigation smoothly</p>
+        </div>
+    </div>
+
+    <!-- STEP 2 -->
+    <div class="section">
+        <div class="p2-box">
+            <p>UX/UI Designer · Visual Studios</p>
+        </div>
+        <img src="AC2.png" alt="Photo 2" class="photo2">
+    </div>
+
+    <!-- STEP 3 -->
+    <div class="section">
+        <img src="AC3.png" alt="Photo 3" class="photo3">
+        <div class="p3-box">
+            <p>I began by building the main form using a MenuStrip to link each tab to its corresponding form and coding the Exit option to close the program. After designing the home screen with an image and title label, I created the scuba form using labels, a textbox, and buttons for calculating totals, resetting the form, and returning home. I wrote separate methods to calculate the subtotal, apply discounts for groups of six or more, and compute the final total. The skydiving form followed the same structure, with the only change being the cost multiplier. Finally, I designed the help form with a single instructional label and a button that returned users to the home page.</p>
+        </div>
+    </div>
+
+    <!-- GALLERY -->
+    <div class="gallery">
+        <div class="gallery-row">
+            <img src="AC4.png" alt="Gallery Image 1" class="gphoto1">
+            <img src="AC5.png" alt="Gallery Image 2" class="gphoto2">
+            <img src="AC6.png" alt="Gallery Image 3" class="gphoto3">
+        </div>
+
+        <div class="feature-box">
+            <p>The application’s strongest feature is its consistent, easy‑to‑navigate design. All forms share the same mint‑green background, matching fonts, and clear layout, creating a cohesive experience. The calculation methods are cleanly separated, making the logic easy to follow and maintain. Buttons provide straightforward actions, while labels clearly display results. The help form adds accessibility by giving users simple instructions and a quick way back to the home screen. Overall, the project demonstrates structured form design, organized code, and a user‑friendly interface..</p>
+        </div>
+    </div>
+
+    <div class="bottom-arrows">
+        <a href="p3.html" class="bottomL-arrow"></a>
+        <a href="projects.html" class="bottomR-arrow"></a>
+    </div>
+
+</body>
+</html>
+
+

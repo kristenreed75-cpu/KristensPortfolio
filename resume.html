@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+
+    <style>
+        body {
+            background-color: #F7B7C3;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+	html, body {
+   	 overflow-x: hidden;
+	}
+
+
+        /* Back Arrow */
+        .back-arrow {
+            display: inline-block;
+            width: 22px;
+            height: 22px;
+            border-left: 4px solid #8B1E3F;
+            border-bottom: 4px solid #8B1E3F;
+            transform: rotate(45deg);
+            margin-left: 40px;
+            margin-top: 20px;
+            text-decoration: none;
+        }
+
+        .back-arrow:hover {
+            border-color: #5f142c;
+            transition: 0.2s;
+        }
+
+        /* Big RESUME title */
+        .resume-title {
+            text-align: center;
+            color: #8B1E3F;
+            font-size: 5rem;
+            letter-spacing: 6px;
+            margin-top: 10px;
+            font-weight: 900;
+        }
+
+        /* Resume grid */
+        .resume-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+            padding: 40px;
+            padding-top: 10px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .resume-section {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            border: 3px solid #8B1E3F;
+        }
+
+        .section-title {
+            color: #8B1E3F;
+            font-size: 1.8rem;
+            font-weight: 800;
+            text-align: center;
+            margin-bottom: 15px;
+            letter-spacing: 2px;
+        }
+
+        /* Red custom bullets */
+        .section-content ul {
+            padding-left: 0;
+            margin: 0;
+        }
+
+        .section-content li {
+            list-style-type: none;
+            position: relative;
+            padding-left: 18px;
+            margin-bottom: 10px;
+            font-size: 1rem;
+            color: #333;
+        }
+
+        .section-content li::before {
+            content: "•";
+            color: #8B1E3F;
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-size: 1.3rem;
+            line-height: 1;
+        }
+
+        /* PDF link styling */
+        .pdf-link {
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 40px;
+        }
+
+        .pdf-link a {
+            color: #8B1E3F;
+            font-size: 1.4rem;
+            font-weight: 700;
+            text-decoration: none;
+            border: 3px solid #8B1E3F;
+            padding: 10px 20px;
+            border-radius: 10px;
+            background: white;
+        }
+
+        .pdf-link a:hover {
+            background: #8B1E3F;
+            color: white;
+        }
+
+        /* BOTTOM ARROWS */
+        .bottom-arrows {
+            width: 100vw;
+            position: fixed;
+            bottom: 30px;
+            left: 0;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 40px;
+            z-index: 9999;
+	    box-sizing: border-box;
+        }
+
+
+        /* LEFT ARROW */
+        .bottomL-arrow {
+            display: inline-block;
+            width: 25px;
+            height: 25px;
+            border-left: 4px solid #8B1E3F;
+            border-bottom: 4px solid #8B1E3F;
+	    margin-right: 200px;
+            transform: rotate(45deg);
+        }
+
+        /* RIGHT ARROW */
+        .bottomR-arrow {
+            display: inline-block;
+            width: 25px;
+            height: 25px;
+            border-right: 4px solid #8B1E3F;
+            border-bottom: 4px solid #8B1E3F;
+            transform: rotate(-45deg);
+	    
+
+        }
+
+        /* Hover effects */
+        .bottomL-arrow:hover,
+        .bottomR-arrow:hover {
+            border-color: #5f142c;
+            transition: 0.2s;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Back Arrow -->
+    <a href="buttons.html" class="back-arrow"></a>
+
+    <h1 class="resume-title">RESUME</h1>
+
+    <div class="resume-grid">
+
+        <!-- Column 1 -->
+        <div class="resume-section">
+            <div class="section-title">SKILLS</div>
+            <div class="section-content">
+                <ul>
+                    <li><strong>UX research & prototyping</strong>: user testing, layout design</li>
+                    <li><strong>Software testing</strong>: QA, debugging, validation</li>
+                    <li><strong>Programming</strong>: Java, Python, C++, HTML, CSS</li>
+                    <li><strong>Information organization</strong>: archiving, documentation</li>
+                    <li><strong>Communication</strong>: reliability, clarity, teamwork</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Column 2 -->
+        <div class="resume-section">
+            <div class="section-title">TECHNICAL EXPERIENCE</div>
+            <div class="section-content">
+                <ul>
+                    <li>Designed and prototyped user‑focused tools</li>
+                    <li>Conducted interviews and usability testing</li>
+                    <li>Built small event‑driven applications</li>
+                    <li>Created a secure network model with ACLs</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Column 3 -->
+        <div class="resume-section">
+            <div class="section-title">PROFESSIONAL EXPERIENCE</div>
+            <div class="section-content">
+                <ul>
+                    <li><strong>Administrative support</strong>: records, scheduling, operations</li>
+                    <li><strong>Program coordination</strong>: reports, staff support</li>
+                    <li><strong>Archiving</strong>: digitizing plans, organizing data</li>
+                    <li><strong>Development support</strong>: outreach, CRM management</li>
+                    <li><strong>Leadership</strong>: CS Parliamentarian, Student Council</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- PDF LINK -->
+    <div class="pdf-link">
+        <a href="Resume.pdf" target="_blank">Click Here for Full Version</a>
+    </div>
+
+    <!-- BOTTOM ARROWS (correct placement) -->
+    <div class="bottom-arrows">
+        <a href="projects.html" class="bottomL-arrow"></a>
+        <a href="contact.html" class="bottomR-arrow"></a>
+    </div>
+
+</body>
+</html>
